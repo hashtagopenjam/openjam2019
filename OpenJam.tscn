@@ -1,5 +1,58 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Control" type="Control"]
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="MenuContainer" type="MarginContainer"]
+material = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_constants/margin_right = 120
+custom_constants/margin_top = 80
+custom_constants/margin_left = 120
+custom_constants/margin_bottom = 80
+
+[node name="VerticalContainer" type="VSplitContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1080.0
+margin_bottom = 720.0
+
+[node name="TitleContainer" type="CenterContainer" parent="VerticalContainer"]
+margin_right = 960.0
+margin_bottom = 14.0
+
+[node name="Title" type="Label" parent="VerticalContainer/TitleContainer"]
+margin_left = 451.0
+margin_right = 509.0
+margin_bottom = 14.0
+text = "Title TBD"
+
+[node name="MainContainer" type="HSplitContainer" parent="VerticalContainer"]
+margin_top = 26.0
+margin_right = 960.0
+margin_bottom = 640.0
+
+[node name="MenuContainer" type="VBoxContainer" parent="VerticalContainer/MainContainer"]
+margin_right = 474.0
+margin_bottom = 614.0
+size_flags_horizontal = 3
+custom_constants/separation = 30
+
+[node name="Start" type="Label" parent="VerticalContainer/MainContainer/MenuContainer"]
+margin_right = 474.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Start Game"
+
+[node name="Quit" type="Label" parent="VerticalContainer/MainContainer/MenuContainer"]
+margin_top = 44.0
+margin_right = 474.0
+margin_bottom = 58.0
+size_flags_horizontal = 3
+text = "Quit Game"
+
+[node name="TextureRect" type="TextureRect" parent="VerticalContainer/MainContainer"]
+margin_left = 486.0
+margin_right = 960.0
+margin_bottom = 614.0
+size_flags_horizontal = 3
