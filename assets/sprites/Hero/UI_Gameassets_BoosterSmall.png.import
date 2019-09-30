@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ship2.png-af83ebfecce5a43b16028c646eccb3e1.stex"
+path="res://.import/UI_Gameassets_BoosterSmall.png-87384e3fa2af8a91c88bfa6b5e31d960.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Ship2.png"
-dest_files=[ "res://.import/Ship2.png-af83ebfecce5a43b16028c646eccb3e1.stex" ]
+source_file="res://assets/sprites/Hero/UI_Gameassets_BoosterSmall.png"
+dest_files=[ "res://.import/UI_Gameassets_BoosterSmall.png-87384e3fa2af8a91c88bfa6b5e31d960.stex" ]
 
 [params]
 
